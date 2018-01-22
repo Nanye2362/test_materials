@@ -23,7 +23,7 @@
     $(function () {
         $(document).on('click', '#update', function () {
             $.ajax({
-                url: "http://localhost/Yii2.0/web/materials/update-material",
+                url: "http://localhost/test/web/materials/update-material",
                 type: "POST",
                 data: {
                     "ID": $('#material_id').text(),
@@ -35,7 +35,7 @@
                 },
                 success: function (res) {
                     if (res.success == true) {
-                        window.location.href = 'http://localhost/Yii2.0/web/site/material-management';
+                        window.location.href = 'http://localhost/test/web/site/material-management';
                     } else {
                         alert(res.error_msg);
                     }

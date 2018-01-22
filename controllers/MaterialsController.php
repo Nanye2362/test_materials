@@ -61,7 +61,7 @@ class MaterialsController extends Controller {
 
             foreach ($materials as $material) {
                 $content = "<tr>
-                    <td> <input type='checkbox' name='m_select' id='" . $material['ID'] . "' data-storage='" . $material['STORAGE'] . "'></td>
+                    <td> <input type='checkbox' name='m_select' id='" . $material['ID'] . "' data-storage='" . $material['STORAGE'] . "' data-price='" . $material['PRICE'] . "'></td>
                     <td> " . $material['ID'] . "</td>
                     <td> " . $material['CODE'] . "</td>
                     <td> " . $material['NAME'] . "</td>

@@ -11,7 +11,7 @@ Material Description: <input type="text" name="material_description" value=""><b
 <script>
     $(function () {
         $.ajax({
-            url: "http://localhost/Yii2.0/web/materials/get-materials",
+            url: "http://localhost/test/web/materials/get-materials",
             type: "POST",
             data: {
                 "flag":"M"
@@ -24,7 +24,7 @@ Material Description: <input type="text" name="material_description" value=""><b
         
         $(document).on('click', '#create_material', function () {
             $.ajax({
-                url: "http://localhost/Yii2.0/web/materials/create-material",
+                url: "http://localhost/test/web/materials/create-material",
                 type: "POST",
                 data: {
                     "CODE": $('input[name=material_code]').val(),
@@ -45,7 +45,7 @@ Material Description: <input type="text" name="material_description" value=""><b
         
         $(document).on('click', '#delete_material', function () {
             $.ajax({
-                url: "http://localhost/Yii2.0/web/materials/delete-material",
+                url: "http://localhost/test/web/materials/delete-material",
                 type: "POST",
                 data: {
                     "ID": $(this).attr('data')
